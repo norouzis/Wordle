@@ -4,7 +4,7 @@ from termcolor import colored
 # Change the number of letters if you wish longer words
 n_letters = 5
 
-file_dict = open("/home/davood/Downloads/sowpods.txt")
+file_dict = open("~/sowpods.txt")
 wordle_dict = file_dict.read().split('\n')
 wordle = [w for w in wordle_dict if len(w) == n_letters and len(set(w))>(n_letters-2)] 
 
