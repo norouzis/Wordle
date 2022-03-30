@@ -6,6 +6,7 @@ n_letters = 5
 
 file_dict = open("~/sowpods.txt")
 wordle_dict = file_dict.read().split('\n')
+file_dict.close()
 wordle = [w for w in wordle_dict if len(w) == n_letters and len(set(w))>(n_letters-2)] 
 
 Word_of_the_day = wordle[random.randint(0, len(wordle)-1)]
